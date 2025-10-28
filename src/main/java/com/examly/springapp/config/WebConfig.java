@@ -10,7 +10,7 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
                 .allowedMethods("*")
-                .allowedOrigins("*")
+                .allowedOrigins("https://budget-tracking-system-frontend.vercel.app/")
                 .allowedHeaders("*");
     }
 }
